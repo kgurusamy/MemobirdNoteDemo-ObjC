@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA32DAEC2010317500130F69 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA32DAEA2010317500130F69 /* DetailViewController.m */; };
+		EA32DAF4201065B700130F69 /* crop_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA32DAEF201065B700130F69 /* crop_icon.png */; };
+		EA32DAF5201065B700130F69 /* delete_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA32DAF0201065B700130F69 /* delete_icon.png */; };
+		EA32DAF6201065B700130F69 /* edit_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA32DAF1201065B700130F69 /* edit_icon.png */; };
+		EA32DAF7201065B700130F69 /* expand.png in Resources */ = {isa = PBXBuildFile; fileRef = EA32DAF2201065B700130F69 /* expand.png */; };
+		EA32DAF8201065B700130F69 /* move_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA32DAF3201065B700130F69 /* move_icon.png */; };
+		EA5DDFB2200EE40000BBEA7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5DDFB1200EE40000BBEA7F /* AppDelegate.m */; };
+		EA5DDFB8200EE40000BBEA7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5DDFB6200EE40000BBEA7F /* Main.storyboard */; };
+		EA5DDFBB200EE40000BBEA7F /* MemobirdNoteDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA5DDFB9200EE40000BBEA7F /* MemobirdNoteDemo.xcdatamodeld */; };
+		EA5DDFBD200EE40000BBEA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5DDFBC200EE40000BBEA7F /* Assets.xcassets */; };
+		EA5DDFC0200EE40000BBEA7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5DDFBE200EE40000BBEA7F /* LaunchScreen.storyboard */; };
+		EA5DDFC3200EE40000BBEA7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5DDFC2200EE40000BBEA7F /* main.m */; };
+		EA5DDFCD200EE40000BBEA7F /* MemobirdNoteDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5DDFCC200EE40000BBEA7F /* MemobirdNoteDemoTests.m */; };
+		EA5DDFDD200EE6AA00BBEA7F /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5DDFDC200EE6AA00BBEA7F /* CoreDataManager.m */; };
+		EA5DDFE1200EEE7100BBEA7F /* SubNote.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5DDFE0200EEE7100BBEA7F /* SubNote.m */; };
+		EA5DDFE4200EF7F100BBEA7F /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5DDFE3200EF7F100BBEA7F /* MainTableViewController.m */; };
+		EA911F44201818C4002B609D /* PECropRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA911F39201818C3002B609D /* PECropRectView.m */; };
+		EA911F45201818C4002B609D /* PECropView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA911F3B201818C3002B609D /* PECropView.m */; };
+		EA911F46201818C4002B609D /* PECropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA911F3D201818C3002B609D /* PECropViewController.m */; };
+		EA911F47201818C4002B609D /* PEResizeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EA911F3F201818C3002B609D /* PEResizeControl.m */; };
+		EA911F48201818C4002B609D /* PEPhotoCropEditor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA911F41201818C3002B609D /* PEPhotoCropEditor.bundle */; };
+		EA911F49201818C4002B609D /* UIImage+PECrop.m in Sources */ = {isa = PBXBuildFile; fileRef = EA911F43201818C3002B609D /* UIImage+PECrop.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA5DDFC9200EE40000BBEA7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5DDFA5200EE40000BBEA7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA5DDFAC200EE40000BBEA7F;
+			remoteInfo = MemobirdNoteDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA32DAE92010317500130F69 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		EA32DAEA2010317500130F69 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		EA32DAEF201065B700130F69 /* crop_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crop_icon.png; sourceTree = "<group>"; };
+		EA32DAF0201065B700130F69 /* delete_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_icon.png; sourceTree = "<group>"; };
+		EA32DAF1201065B700130F69 /* edit_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit_icon.png; sourceTree = "<group>"; };
+		EA32DAF2201065B700130F69 /* expand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expand.png; sourceTree = "<group>"; };
+		EA32DAF3201065B700130F69 /* move_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = move_icon.png; sourceTree = "<group>"; };
+		EA5DDFAD200EE40000BBEA7F /* MemobirdNoteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemobirdNoteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5DDFB0200EE40000BBEA7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA5DDFB1200EE40000BBEA7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA5DDFB7200EE40000BBEA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA5DDFBA200EE40000BBEA7F /* MemobirdNoteDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemobirdNoteDemo.xcdatamodel; sourceTree = "<group>"; };
+		EA5DDFBC200EE40000BBEA7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA5DDFBF200EE40000BBEA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA5DDFC1200EE40000BBEA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5DDFC2200EE40000BBEA7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA5DDFC8200EE40000BBEA7F /* MemobirdNoteDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemobirdNoteDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5DDFCC200EE40000BBEA7F /* MemobirdNoteDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemobirdNoteDemoTests.m; sourceTree = "<group>"; };
+		EA5DDFCE200EE40000BBEA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5DDFDB200EE6AA00BBEA7F /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		EA5DDFDC200EE6AA00BBEA7F /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		EA5DDFDF200EEE7100BBEA7F /* SubNote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubNote.h; sourceTree = "<group>"; };
+		EA5DDFE0200EEE7100BBEA7F /* SubNote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubNote.m; sourceTree = "<group>"; };
+		EA5DDFE2200EF7F100BBEA7F /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		EA5DDFE3200EF7F100BBEA7F /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		EA911F38201818C3002B609D /* PECropRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PECropRectView.h; sourceTree = "<group>"; };
+		EA911F39201818C3002B609D /* PECropRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PECropRectView.m; sourceTree = "<group>"; };
+		EA911F3A201818C3002B609D /* PECropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PECropView.h; sourceTree = "<group>"; };
+		EA911F3B201818C3002B609D /* PECropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PECropView.m; sourceTree = "<group>"; };
+		EA911F3C201818C3002B609D /* PECropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PECropViewController.h; sourceTree = "<group>"; };
+		EA911F3D201818C3002B609D /* PECropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PECropViewController.m; sourceTree = "<group>"; };
+		EA911F3E201818C3002B609D /* PEResizeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEResizeControl.h; sourceTree = "<group>"; };
+		EA911F3F201818C3002B609D /* PEResizeControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEResizeControl.m; sourceTree = "<group>"; };
+		EA911F41201818C3002B609D /* PEPhotoCropEditor.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PEPhotoCropEditor.bundle; sourceTree = "<group>"; };
+		EA911F42201818C3002B609D /* UIImage+PECrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PECrop.h"; sourceTree = "<group>"; };
+		EA911F43201818C3002B609D /* UIImage+PECrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PECrop.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA5DDFAA200EE40000BBEA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5DDFC5200EE40000BBEA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA32DAEE201065B700130F69 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EA32DAEF201065B700130F69 /* crop_icon.png */,
+				EA32DAF0201065B700130F69 /* delete_icon.png */,
+				EA32DAF1201065B700130F69 /* edit_icon.png */,
+				EA32DAF2201065B700130F69 /* expand.png */,
+				EA32DAF3201065B700130F69 /* move_icon.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		EA5DDFA4200EE40000BBEA7F = {
+			isa = PBXGroup;
+			children = (
+				EA5DDFAF200EE40000BBEA7F /* MemobirdNoteDemo */,
+				EA5DDFCB200EE40000BBEA7F /* MemobirdNoteDemoTests */,
+				EA5DDFAE200EE40000BBEA7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA5DDFAE200EE40000BBEA7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA5DDFAD200EE40000BBEA7F /* MemobirdNoteDemo.app */,
+				EA5DDFC8200EE40000BBEA7F /* MemobirdNoteDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA5DDFAF200EE40000BBEA7F /* MemobirdNoteDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EA911F37201818C3002B609D /* PEPhotoCropEditorLib */,
+				EA32DAEE201065B700130F69 /* images */,
+				EA5DDFDE200EEE4B00BBEA7F /* Model */,
+				EA5DDFDA200EE6AA00BBEA7F /* ManagerClasses */,
+				EA5DDFB0200EE40000BBEA7F /* AppDelegate.h */,
+				EA5DDFB1200EE40000BBEA7F /* AppDelegate.m */,
+				EA5DDFB6200EE40000BBEA7F /* Main.storyboard */,
+				EA5DDFBC200EE40000BBEA7F /* Assets.xcassets */,
+				EA5DDFBE200EE40000BBEA7F /* LaunchScreen.storyboard */,
+				EA5DDFC1200EE40000BBEA7F /* Info.plist */,
+				EA5DDFC2200EE40000BBEA7F /* main.m */,
+				EA5DDFB9200EE40000BBEA7F /* MemobirdNoteDemo.xcdatamodeld */,
+				EA5DDFE2200EF7F100BBEA7F /* MainTableViewController.h */,
+				EA5DDFE3200EF7F100BBEA7F /* MainTableViewController.m */,
+				EA32DAE92010317500130F69 /* DetailViewController.h */,
+				EA32DAEA2010317500130F69 /* DetailViewController.m */,
+			);
+			path = MemobirdNoteDemo;
+			sourceTree = "<group>";
+		};
+		EA5DDFCB200EE40000BBEA7F /* MemobirdNoteDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA5DDFCC200EE40000BBEA7F /* MemobirdNoteDemoTests.m */,
+				EA5DDFCE200EE40000BBEA7F /* Info.plist */,
+			);
+			path = MemobirdNoteDemoTests;
+			sourceTree = "<group>";
+		};
+		EA5DDFDA200EE6AA00BBEA7F /* ManagerClasses */ = {
+			isa = PBXGroup;
+			children = (
+				EA5DDFDB200EE6AA00BBEA7F /* CoreDataManager.h */,
+				EA5DDFDC200EE6AA00BBEA7F /* CoreDataManager.m */,
+			);
+			path = ManagerClasses;
+			sourceTree = "<group>";
+		};
+		EA5DDFDE200EEE4B00BBEA7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA5DDFDF200EEE7100BBEA7F /* SubNote.h */,
+				EA5DDFE0200EEE7100BBEA7F /* SubNote.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA911F37201818C3002B609D /* PEPhotoCropEditorLib */ = {
+			isa = PBXGroup;
+			children = (
+				EA911F38201818C3002B609D /* PECropRectView.h */,
+				EA911F39201818C3002B609D /* PECropRectView.m */,
+				EA911F3A201818C3002B609D /* PECropView.h */,
+				EA911F3B201818C3002B609D /* PECropView.m */,
+				EA911F3C201818C3002B609D /* PECropViewController.h */,
+				EA911F3D201818C3002B609D /* PECropViewController.m */,
+				EA911F3E201818C3002B609D /* PEResizeControl.h */,
+				EA911F3F201818C3002B609D /* PEResizeControl.m */,
+				EA911F40201818C3002B609D /* Resources */,
+				EA911F42201818C3002B609D /* UIImage+PECrop.h */,
+				EA911F43201818C3002B609D /* UIImage+PECrop.m */,
+			);
+			path = PEPhotoCropEditorLib;
+			sourceTree = "<group>";
+		};
+		EA911F40201818C3002B609D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA911F41201818C3002B609D /* PEPhotoCropEditor.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA5DDFAC200EE40000BBEA7F /* MemobirdNoteDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5DDFD1200EE40000BBEA7F /* Build configuration list for PBXNativeTarget "MemobirdNoteDemo" */;
+			buildPhases = (
+				EA5DDFA9200EE40000BBEA7F /* Sources */,
+				EA5DDFAA200EE40000BBEA7F /* Frameworks */,
+				EA5DDFAB200EE40000BBEA7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemobirdNoteDemo;
+			productName = MemobirdNoteDemo;
+			productReference = EA5DDFAD200EE40000BBEA7F /* MemobirdNoteDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA5DDFC7200EE40000BBEA7F /* MemobirdNoteDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5DDFD4200EE40000BBEA7F /* Build configuration list for PBXNativeTarget "MemobirdNoteDemoTests" */;
+			buildPhases = (
+				EA5DDFC4200EE40000BBEA7F /* Sources */,
+				EA5DDFC5200EE40000BBEA7F /* Frameworks */,
+				EA5DDFC6200EE40000BBEA7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA5DDFCA200EE40000BBEA7F /* PBXTargetDependency */,
+			);
+			name = MemobirdNoteDemoTests;
+			productName = MemobirdNoteDemoTests;
+			productReference = EA5DDFC8200EE40000BBEA7F /* MemobirdNoteDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA5DDFA5200EE40000BBEA7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Intretech Inc";
+				TargetAttributes = {
+					EA5DDFAC200EE40000BBEA7F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EA5DDFC7200EE40000BBEA7F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA5DDFAC200EE40000BBEA7F;
+					};
+				};
+			};
+			buildConfigurationList = EA5DDFA8200EE40000BBEA7F /* Build configuration list for PBXProject "MemobirdNoteDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA5DDFA4200EE40000BBEA7F;
+			productRefGroup = EA5DDFAE200EE40000BBEA7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA5DDFAC200EE40000BBEA7F /* MemobirdNoteDemo */,
+				EA5DDFC7200EE40000BBEA7F /* MemobirdNoteDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA5DDFAB200EE40000BBEA7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA32DAF6201065B700130F69 /* edit_icon.png in Resources */,
+				EA32DAF5201065B700130F69 /* delete_icon.png in Resources */,
+				EA32DAF4201065B700130F69 /* crop_icon.png in Resources */,
+				EA32DAF7201065B700130F69 /* expand.png in Resources */,
+				EA5DDFC0200EE40000BBEA7F /* LaunchScreen.storyboard in Resources */,
+				EA5DDFBD200EE40000BBEA7F /* Assets.xcassets in Resources */,
+				EA911F48201818C4002B609D /* PEPhotoCropEditor.bundle in Resources */,
+				EA5DDFB8200EE40000BBEA7F /* Main.storyboard in Resources */,
+				EA32DAF8201065B700130F69 /* move_icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5DDFC6200EE40000BBEA7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA5DDFA9200EE40000BBEA7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5DDFBB200EE40000BBEA7F /* MemobirdNoteDemo.xcdatamodeld in Sources */,
+				EA911F46201818C4002B609D /* PECropViewController.m in Sources */,
+				EA5DDFDD200EE6AA00BBEA7F /* CoreDataManager.m in Sources */,
+				EA5DDFE4200EF7F100BBEA7F /* MainTableViewController.m in Sources */,
+				EA911F49201818C4002B609D /* UIImage+PECrop.m in Sources */,
+				EA911F47201818C4002B609D /* PEResizeControl.m in Sources */,
+				EA5DDFC3200EE40000BBEA7F /* main.m in Sources */,
+				EA5DDFE1200EEE7100BBEA7F /* SubNote.m in Sources */,
+				EA911F45201818C4002B609D /* PECropView.m in Sources */,
+				EA911F44201818C4002B609D /* PECropRectView.m in Sources */,
+				EA5DDFB2200EE40000BBEA7F /* AppDelegate.m in Sources */,
+				EA32DAEC2010317500130F69 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5DDFC4200EE40000BBEA7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5DDFCD200EE40000BBEA7F /* MemobirdNoteDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA5DDFCA200EE40000BBEA7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA5DDFAC200EE40000BBEA7F /* MemobirdNoteDemo */;
+			targetProxy = EA5DDFC9200EE40000BBEA7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA5DDFB6200EE40000BBEA7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA5DDFB7200EE40000BBEA7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA5DDFBE200EE40000BBEA7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA5DDFBF200EE40000BBEA7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA5DDFCF200EE40000BBEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA5DDFD0200EE40000BBEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA5DDFD2200EE40000BBEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWRJNNALTK;
+				INFOPLIST_FILE = MemobirdNoteDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.intretech.MemobirdNoteDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA5DDFD3200EE40000BBEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWRJNNALTK;
+				INFOPLIST_FILE = MemobirdNoteDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.intretech.MemobirdNoteDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA5DDFD5200EE40000BBEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWRJNNALTK;
+				INFOPLIST_FILE = MemobirdNoteDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.intretech.MemobirdNoteDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemobirdNoteDemo.app/MemobirdNoteDemo";
+			};
+			name = Debug;
+		};
+		EA5DDFD6200EE40000BBEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UWRJNNALTK;
+				INFOPLIST_FILE = MemobirdNoteDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.intretech.MemobirdNoteDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemobirdNoteDemo.app/MemobirdNoteDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA5DDFA8200EE40000BBEA7F /* Build configuration list for PBXProject "MemobirdNoteDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5DDFCF200EE40000BBEA7F /* Debug */,
+				EA5DDFD0200EE40000BBEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5DDFD1200EE40000BBEA7F /* Build configuration list for PBXNativeTarget "MemobirdNoteDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5DDFD2200EE40000BBEA7F /* Debug */,
+				EA5DDFD3200EE40000BBEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5DDFD4200EE40000BBEA7F /* Build configuration list for PBXNativeTarget "MemobirdNoteDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5DDFD5200EE40000BBEA7F /* Debug */,
+				EA5DDFD6200EE40000BBEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA5DDFB9200EE40000BBEA7F /* MemobirdNoteDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA5DDFBA200EE40000BBEA7F /* MemobirdNoteDemo.xcdatamodel */,
+			);
+			currentVersion = EA5DDFBA200EE40000BBEA7F /* MemobirdNoteDemo.xcdatamodel */;
+			path = MemobirdNoteDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA5DDFA5200EE40000BBEA7F /* Project object */;
+}
