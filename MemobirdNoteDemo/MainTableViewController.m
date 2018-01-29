@@ -146,7 +146,6 @@ NSInteger noteLabelDefaultTag = 20;
     NSMutableArray *subNote = [NSKeyedUnarchiver unarchiveObjectWithData:(NSData*)note.subNote];
     NSLog(@"SubNote : %@",subNote);
    
-    
     if(subNote !=nil)
     {
         //[subNoteArr insertObject:subNote atIndex:0];

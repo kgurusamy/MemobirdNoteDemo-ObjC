@@ -523,16 +523,17 @@ typedef enum : NSUInteger {
     [combinedString replaceCharactersInRange:range withString:string];
     
     if(textField.tag != txtDescriptionDefaultTag){
+ 
         UITableViewCell *currentCell = (UITableViewCell*)textField.superview.superview;
         NSIndexPath *currentIndexPath = [self.tableView indexPathForCell:currentCell];
         if([string isEqualToString:@""]){
             UITextRange *selectedRange = textField.selectedTextRange;
             long cursorPosition = [textField offsetFromPosition:textField.beginningOfDocument toPosition:selectedRange.start];
-            if(cursorPosition == 1){
 
+            if (cursorPosition == 1) {
                 [self deleteCell:currentIndexPath.row];
             }
-            NSLog(@"Backspace pressed");
+           
         }
         if(combinedString.size.width < textField.bounds.size.width){
             
@@ -552,18 +553,12 @@ typedef enum : NSUInteger {
         SubNote *subNote = self.subNoteArray[currentIndexPath.row];
         subNote.text = textField.text;
         self.subNoteArray[currentIndexPath.row] = subNote;
+        if([textField.text isEqualToString:@""]){
+            textField.text = @" ";
+            NSLog(@"Did Change  : '%@'",textField.text);
+        }
     }
 }
-
-//-(IBAction)choosePhoto_clicked:(id)sender
-//{
-//    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-//    picker.delegate = self;
-//    picker.allowsEditing = YES;
-//    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-//
-//    [self presentViewController:picker animated:YES completion:nil];
-//}
 
 
 
@@ -653,6 +648,9 @@ typedef enum : NSUInteger {
         if([cell.contentView viewWithTag:textFieldDefaultTag]!=nil){
             [cell setSelected:YES];
             UITextField *nextTextField = [cell.contentView viewWithTag:textFieldDefaultTag];
+            if([nextTextField.text isEqualToString:@""]){
+                nextTextField.text = @" ";
+            }
             [nextTextField becomeFirstResponder];
        }
     //}];
@@ -676,12 +674,14 @@ typedef enum : NSUInteger {
             if(cell != nil){
                 [cell setSelected:YES];
                 UITextField *previousTextField = (UITextField*)[cell.contentView viewWithTag:textFieldDefaultTag];
-                if([previousTextField canBecomeFirstResponder]){
-                    if([previousTextField.text length]==0){
+                //if([previousTextField canBecomeFirstResponder]){
+                
+                    [previousTextField becomeFirstResponder];
+                NSLog(@"previous textfield : '%@'", previousTextField.text);
+                    if([previousTextField.text isEqualToString:@""]){
                         previousTextField.text = @" ";
                     }
-                    [previousTextField becomeFirstResponder];
-                }
+                //}
             }
         //}];
     }
